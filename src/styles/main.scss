@@ -73,7 +73,7 @@
       &:hover {
         background-color: white;
         border: 1px solid black;
-
+        transition: 500ms linear;
         a {
           color: black;
         }
@@ -83,12 +83,12 @@
 }
 
 .title {
-  margin-top: 40px;
+  margin-top: 25px;
   margin-bottom: 10px;
 }
 
 .movie_infos {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: rgb(159, 159, 159);
 }
 
@@ -116,17 +116,17 @@
 
 .title_text {
   font-size: 1.3rem;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .sinopse {
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 
   &_text {
     color: rgb(202, 202, 202);
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 }
 
@@ -138,11 +138,20 @@
 
 .banners {
   width: 100%;
-  margin: 70px auto;
-  background-color: #2a2a2a;
-  text-align: center;
+  margin: 60px auto;
+  color: #000;
+
   h2 {
+    font-weight: bold;
     padding: 10px 0;
+    border-bottom: 1px solid #c4c4c4;
+    margin-bottom: 20px;
+  }
+}
+
+.carousel-item {
+  img {
+    border-radius: 5px;
   }
 }
 
@@ -153,4 +162,52 @@
 
 .cast {
   color: #000000;
+}
+
+.cast__title {
+  font-weight: bold;
+  border-bottom: 1px solid #c4c4c4;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-text {
+  font-style: italic;
+  color: #737373;
+}
+
+.card {
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: translateX(0) scale(1.04);
+    box-shadow: 2px 2px 9px 0px rgba(173, 173, 173, 1);
+  }
+}
+
+footer {
+  background-color: #000;
+  margin-top: 60px;
+  p {
+    text-align: center;
+  }
+
+  .footer__p1 {
+    padding-top: 30px;
+    font-weight: bold;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      margin: 10px;
+      margin-bottom: 30px;
+    }
+  }
 }
